@@ -4,12 +4,12 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2 class=" text text-primary text-center ">Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New", "Create", "Employee", new{@class="btn btn-primary"})
 </p>
-<table class="table">
+<table class="table table-bordered table-active table-striped">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Name)
